@@ -74,6 +74,9 @@ class LinkedList:
             
         if current_node is None:
             return
+        
+        prev.next = current_node.next
+        current_node = None
             
 ll = LinkedList()
 ll.append("D")
